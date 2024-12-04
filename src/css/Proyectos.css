@@ -1,0 +1,69 @@
+/* Título de cada card con fondo azul */
+.proyecto-card-header {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Color del texto */
+    padding: 1px 1px; /* Menos espaciado (más pequeño) */
+    font-size: 2rem; /* Tamaño del texto */
+    text-align: center;
+    border-radius: 5px 5px 0 0; /* Bordes redondeados solo en la parte superior */
+  }
+  
+  /* Contenedor principal */
+  .proyectos-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  /* Contenedor de la cuadrícula */
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Tarjeta del proyecto */
+  .proyecto-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagen de la tarjeta */
+  .proyecto-card-img {
+    width: 100%;
+    height: 250px; /* Aumentar la altura para que se vea mejor */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin recortes */
+    margin-bottom: 10px; /* Añadir un poco de espacio debajo de la imagen */
+  }
+  
+  /* Descripción de la tarjeta */
+  .proyecto-card-desc {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Ajuste responsivo */
+  @media (max-width: 1024px) {
+    .proyectos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .proyectos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
