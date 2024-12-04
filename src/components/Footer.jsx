@@ -9,12 +9,6 @@ const Footer = () => {
       <div className="pie">
         <h1 className="titulopie">Tienes un proyecto que quieras hacer?</h1>
         <Link to="/contacto"><button className="boton2"> Contactame!</button></Link>
-        <div className="social2">
-          <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-          <a href="#"><i className="fab fa-youtube"></i></a>
-        </div>
       </div>
     </footer>
   );

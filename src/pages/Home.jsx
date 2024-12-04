@@ -68,7 +68,7 @@ const Home = () => {
                   />
                 </div>
                 <div className="s-b-text">
-                  <p><a href="#">{servicio.descripcion}</a></p>
+                  <p><a href="/">{servicio.descripcion}</a></p>
                 </div>
               </div>
             ))}
